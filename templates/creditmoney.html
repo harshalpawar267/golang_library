@@ -1,0 +1,10 @@
+{{define "creditmoney"}}
+{{template "header" .}}
+    <h1>Credit Amount</h1>
+    <p class="lead">Credit amount on employee.</p>
+    <form action="/checkin/{{.ID}}" method="post">
+        <input type="text" name="number"></input>
+        <input type="submit" ></input>
+    </form>    
+{{template "footer" .}}
+{{end}}

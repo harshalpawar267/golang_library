@@ -1,0 +1,11 @@
+{{define "debitmoney"}}
+{{template "header" .}}
+    <h1>Debit Amount</h1>
+    <p class="lead">Debit amount from Employee Account.</p>
+    <form action="/remove/{{.ID}}" method="post">
+        <input type="text" name="number"></input>
+        <input type="submit" ></input>
+    </form>
+{{template "footer" .}}
+{{end}}<html>
+
